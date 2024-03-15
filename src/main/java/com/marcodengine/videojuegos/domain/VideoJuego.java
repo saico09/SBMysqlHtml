@@ -12,8 +12,16 @@ public class VideoJuego {
 	private String nombre;
 	private String descripcion;
 	private String imageUrl;
+	@ManyToOne
+	private Distribuidor distribuidor;
 	
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -32,6 +40,13 @@ public class VideoJuego {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+	public Distribuidor getDistribuidor() {
+		return distribuidor;
+	}
+	public void setDistribuidor(Distribuidor distribuidor) {
+		this.distribuidor = distribuidor;
+	}
+	
 	
 	
 }
