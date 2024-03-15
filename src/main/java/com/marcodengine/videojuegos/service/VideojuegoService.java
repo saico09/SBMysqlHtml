@@ -22,7 +22,10 @@ public class VideojuegoService {
 
 
 	public List<VideoJuego> buscarDestacados(){
-		return videojuegoRepository.findAll();
+		
+		return videojuegoRepository.buscarTodos();
+		//return videojuegoRepository.findAll();
+		
 		/*List<VideoJuego> destacados = new ArrayList<>();
 		
 		VideoJuego juego1 = new VideoJuego();
